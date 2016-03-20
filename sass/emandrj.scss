@@ -1,0 +1,38 @@
+$color-gray: #7c786a;
+$color-blue: #8dcdc1;
+$color-green: #d3e397;
+$color-yellow: #fff5c3;
+$color-red: #eb6e44;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-gray;
+    font-family: "Helvetica Neue";
+}
+
+header {
+    > nav {
+        height: 40px;
+        background-color: $color-green;
+    }
+    background-color: $color-blue;
+    > div {
+        color: #fff;
+        background-size: cover;
+        background-position: center;
+        background-image: url("/img/home-header.jpg");
+        $padding: 100px;
+        padding: $padding 8px;
+    }
+}
+
+a {
+    color: $color-red;
+    cursor: pointer;
+    &:hover {
+        color: $color-red;
+    }
+}
